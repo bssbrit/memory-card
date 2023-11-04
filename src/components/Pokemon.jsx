@@ -31,10 +31,15 @@ const Pokemon = ({pokemonName, restartPokes, shuffleArray}) => {
       {pokemonName.map(poke => (
         
         <div className='pokeCard' key={poke.name} onClick={() => checkClick(poke)}>
+          <p style={{
+            backgroundColor: poke.types[0].type.name == 'water' ? 'blue' : (poke.types[0].type.name == 'fire' ? 'red' : (poke.types[0].type.name == 'grass' ? 'green' : 'gold')) 
+          }}>{poke.types[0].type.name}</p>
           <img src={poke.sprites.front_default} alt=""  />
+
           <p style={{
             textTransform:'uppercase'
           }}>{poke.name}</p>
+        
         </div>
       ))}
     </div>
