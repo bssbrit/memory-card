@@ -16,6 +16,7 @@ const Pokemon = ({pokemonName, restartPokes, shuffleArray}) => {
    else {
   console.log("Botão foi clicado");
   poke.status = true 
+  shuffleArray(pokemonName)
   setCounter(roundCounter + 1)
   }
   }

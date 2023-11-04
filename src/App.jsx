@@ -6,7 +6,7 @@ function App() {
   
  
   useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon/?limit=30')
+    fetch('https://pokeapi.co/api/v2/pokemon/?limit=10')
     .then(response => {
       const responseJson = response.json();
       return responseJson
