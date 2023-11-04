@@ -22,8 +22,8 @@ const Pokemon = ({pokemonName, restartPokes, shuffleArray}) => {
   }
   return (
     <div className='pokeTabuleiro'>
-      <p>Contador do round {roundCounter}</p>
-      <p>Best Score {record}</p>
+      <p>Contador do round {roundCounter}// Best Score {record}</p>
+      
       <button onClick={() => {setCounter(0); setRecord(0); shuffleArray(pokemonName);
     restartPokes() }}> Restart</button>
     <div className='pokeDiv' >

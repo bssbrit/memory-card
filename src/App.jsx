@@ -52,7 +52,7 @@ function App() {
     <div className='container'>
       <h1 style={{textAlign:'center'}}>Poke  Memory</h1>
       
-      <button onClick={() => console.log(pokemonName)}>poke</button> 
+      {/* <button onClick={() => console.log(pokemonName)}>poke</button>  */}
       <Pokemon pokemonName={pokemonName} restartPokes={restartPokes} shuffleArray={shuffleArray}/>
     </div>
   )
