@@ -3,3 +3,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body{
+  height: 100vh;
+  background-color: greenyellow;
+}
+.container {
+  height: 100vh;
+  border: 1px solid black;
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./assets/pokeGrass.png');
+
+}
+.pokeTabuleiro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.pokeDiv{
+  display: grid;
+  
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.pokeCard{
+  background-color: yellow;
+  border: 1px solid black;
+}

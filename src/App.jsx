@@ -6,7 +6,7 @@ function App() {
   
  
   useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon/?limit=10')
+    fetch('https://pokeapi.co/api/v2/pokemon/?limit=12')
     .then(response => {
       const responseJson = response.json();
       return responseJson
@@ -49,7 +49,9 @@ function App() {
 
 
   return (
-    <div className='container'>{/* 
+    <div className='container'>
+      <h1 style={{textAlign:'center', paddingBottom: '25px'}}>PokeMemory</h1>
+      {/* 
       <button onClick={() => console.log(pokemonName)}>poke</button> */}
       <Pokemon pokemonName={pokemonName} restartPokes={restartPokes} shuffleArray={shuffleArray}/>
     </div>
